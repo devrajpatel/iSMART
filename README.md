@@ -1,7 +1,7 @@
 # iSMART
 **Intelligent System for bi-Modal Recognition of Personality Traits on First Impressions V2 dataset**
 
-In this project, you are tasked with building a multimodal deep neural network for personality trait detection using tf.keras. You'll be working with the First Impressions V2 dataset, which contains short video clips of speakers talking to the camera. The goal is to predict five personality traits: Extraversion, Agreeableness, Conscientiousness, Neuroticism, and Openness.
+In this project, we are tasked with building a multimodal deep neural network for personality trait detection using tf.keras. First the 'Chalearn: First Impressions V2 dataset', which contains short video clips of speakers talking to the camera is downloaded. Here you can find more information about the dataset:(https://chalearnlap.cvc.uab.cat/dataset/24/data/43/description/). The Big Five personality traits, also known as the Five Factor Model (FFM), are openness, conscientiousness, extraversion, agreeableness, and neuroticism. They represent fundamental dimensions of human personality and are used to describe individual differences in various aspects of behavior and emotion. The goal of this project is to predict five personality traits: Extraversion, Agreeableness, Conscientiousness, Neuroticism, and Openness. 
 
 To prepare the dataset, follow these steps:
 
@@ -21,11 +21,11 @@ To prepare the dataset, follow these steps:
    - The video representation per sample will be a tensor with shape (F, H, W, 3), where F is the number of frames (e.g., 6), and H and W are spatial dimensions (e.g., 128).
 
 3.  Transcription:
-   - Takes a transcript file name and a boolean flag indicating if it's used for training. 
+   - Takes a transcript file name and a boolean flag indicating if it's used for training.
    - Calculates various features from the transcript, including the total number of words, the number of unique words, and the ratio of total words to unique words for each key in the transcript.
    - Counts the occurrence of filler words, although this feature is commented out and considered optional.
    - Returns a dictionary with each key representing a unique identifier from the transcript and associated values containing the calculated features.
-     
+        
 4. Ground Truth Labels:
    - There are 5 targets (personality traits). Plot the distributions of these traits.
    - Be aware of the 'regression-to-the-mean problem.'
