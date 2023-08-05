@@ -1,5 +1,5 @@
 # iSMART
-**Intelligent System for bi-Modal Recognition of Personality Traits on First Impressions V2 dataset**
+**Intelligent System for Multi-Modal Recognition of Personality Traits on First Impressions V2 dataset**
 
 In this project, we are tasked with building a multimodal deep neural network for personality trait detection using tf.keras. First the 'Chalearn: First Impressions V2 dataset', which contains short video clips of speakers talking to the camera is downloaded. Here you can find more information about the dataset:(https://chalearnlap.cvc.uab.cat/dataset/24/data/43/description/). The Big Five personality traits, also known as the Five Factor Model (FFM), are openness, conscientiousness, extraversion, agreeableness, and neuroticism. They represent fundamental dimensions of human personality and are used to describe individual differences in various aspects of behavior and emotion. The goal of this project is to predict five personality traits: Extraversion, Agreeableness, Conscientiousness, Neuroticism, and Openness. 
 
