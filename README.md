@@ -31,12 +31,12 @@ To prepare the dataset, follow these steps:
    - Be aware of the 'regression-to-the-mean problem.'
 
 5. Create a Generator:
-   - Implement a generator that iterates over the audio and visual representations and produces a tuple ([x0, x1], y), where x0 is the audio, x1 is the video representation, and y is the ground truth (a 5x1 vector for each sample).
+   - Implement a generator that iterates over the audio and visual representations and produces a tuple ([x0, x1], y), where x0 is the audio, x1 is the video representation, x2 is the transcript representation and y is the ground truth (a 5x1 vector for each sample).
 
 6. Model Creation:
    - Create the audio subnetwork and choose from one of the suggested configurations (BLSTM, Conv1D, or Conv2D).
    - Create the visual subnetwork using a visual backbone, such as VGG-like architecture or ResNet50/Inception architecture.
-   - Create Transcription subnetwork word embedding and bidirectional LSTM.
+   - Create the transcription subnetwork using word embedding and bidirectional LSTM.
    - Concatenate the final hidden representations of the audio, visual and transcription subnetworks.
    - Apply fully connected layers (256 units, ReLU), followed by another dense layer (5 units, linear or sigmoid).
    - You can feed multiple inputs to the Model using a list.
